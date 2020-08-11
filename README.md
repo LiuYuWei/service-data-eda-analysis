@@ -26,6 +26,8 @@ $ ./docker_remove_service.sh
 
 http://{ip-address}:8002/docs
 
+![image](demo/swagger_ui.png)
+
 ## Version, author and other information:
 - See the relation information in [setup file](setup.py).
 
