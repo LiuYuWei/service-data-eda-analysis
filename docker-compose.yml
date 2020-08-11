@@ -3,7 +3,7 @@ version: '3'
 services:
   fastapi:
     restart: always
-    image: service-classification-model-training
+    image: service-data-eda-analysis
     ports:
       - '8002:8000'
     env_file:
