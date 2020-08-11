@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 # import project package.
 from config.config_setting import ConfigSetting
 from src.blueprint.api_router import create_api_router
+from src.blueprint.eda_router import create_eda_router
 
 def create_app(unittest=False):
     """The function to creates the fastapi service."""
@@ -19,6 +20,9 @@ def create_app(unittest=False):
 
     api_router = create_api_router()
     app.include_router(api_router, prefix="/api", tags=["api"])
+
+    eda_router = create_eda_router()
+    app.include_router(eda_router, prefix="/eda", tags=["eda"])
 
     log.info("Start the fastapi service.")
     return app

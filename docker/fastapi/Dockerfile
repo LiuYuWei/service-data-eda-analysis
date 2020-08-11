@@ -39,6 +39,8 @@ RUN chown -R app:app $APP_HOME
 #Install python packages
 COPY ./docker/fastapi/requirements.txt $APP_HOME/requirements.txt
 RUN pip3 --no-cache-dir install -r $APP_HOME/requirements.txt
+RUN pip3 install jupyter pandas-profiling[notebook]
+RUN jupyter nbextension enable --py widgetsnbextension
 
 #Project data and code
 COPY . $APP_HOME
@@ -48,7 +50,7 @@ EXPOSE 5000
 ENV PROJECT_PATH=$APP_HOME
 
 #Change User - app
-# USER app
+USER app
 
 #Run api code
-ENTRYPOINT [ "/bin/bash" , "-c" , "python3 main.py --framework fastapi"]
+ENTRYPOINT [ "/bin/bash" , "-c" , "python3 main.py"]

@@ -1,1 +1,1 @@
-docker-compose -p classification-model-training down
+docker-compose -p service-data-eda-analysis down

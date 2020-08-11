@@ -1,2 +1,2 @@
 cd ..
-docker-compose -p classification-model-training up -d
+docker-compose -p service-data-eda-analysis up -d
