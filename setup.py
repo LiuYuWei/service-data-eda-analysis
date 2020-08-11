@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     project_name='service-data-eda-analysis',
-    project_version='0.0.5',
+    project_version='0.0.6',
     description='In this project, we want to build the platform to do the evaluation.',
     long_description=readme_text,
     author='Simon Liu',
