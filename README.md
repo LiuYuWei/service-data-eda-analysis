@@ -1,9 +1,3 @@
-# sidata.ai platform project
-
-You can see here to know about the `sidata.ai` platform.
-
-https://liuyuwei.github.io/sidata.ai/
-
 # service-data-eda-analysis
 
 This is the service which used [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling) to do the data EDA.
